@@ -1,0 +1,128 @@
+﻿* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+.app { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #30363d;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #58a6ff, #a371f7, #f778ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+header p { color: #8b949e; margin-top: 10px; font-size: 1.1rem; }
+
+.section { margin-bottom: 60px; }
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #58a6ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #58a6ff;
+}
+
+.lang-card h3 { font-size: 1.4rem; margin-bottom: 12px; color: #f778ba; }
+
+.hype-bar {
+  height: 8px;
+  background: #21262d;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.hype-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #58a6ff, #a371f7);
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.hype-value { font-size: 0.85rem; color: #8b949e; }
+
+.lang-card p { margin-top: 12px; color: #c9d1d9; font-size: 0.95rem; }
+
+.product-card { display: flex; flex-direction: column; }
+
+.categoria {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #21262d;
+  color: #58a6ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+.product-card p { color: #8b949e; font-size: 0.9rem; flex-grow: 1; }
+
+.preco {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3fb950;
+  margin: 16px 0 12px;
+}
+
+.product-card button {
+  background: linear-gradient(90deg, #238636, #2ea043);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.product-card button:hover { opacity: 0.85; }
+
+.loading {
+  text-align: center;
+  padding: 100px;
+  font-size: 1.5rem;
+  color: #58a6ff;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
